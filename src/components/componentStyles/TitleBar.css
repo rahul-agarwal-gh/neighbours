@@ -1,0 +1,104 @@
+.titleBar{
+    background-color : #2b2e4a;
+    color : #fff;
+    width: 100%;
+    padding : 0.7% 0.5%;
+}
+
+.ui.label.projectTitle{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-left : 1%;
+    padding: 8px;
+    background-color: #2b2e4a;
+    color: whitesmoke;
+    display: inline-block;
+   
+}
+
+.ui.label.projectTitle:hover{
+
+    font-family: Verdana, Geneva, Tahoma, serif;
+    font-size: 20px;
+    margin-left : 1%;
+    padding: 8px;
+    background-color: #e23e57;
+    border-radius: 3%;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+
+select.ui.dropdown{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-left : 1%;
+    padding: 6px;
+    display: inline-block;
+    background-color: #2b2e4a;
+    border-color: #2b2e4a;
+    color: whitesmoke;
+}
+
+select.ui.dropdown:hover{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-left : 1%;
+    padding: 6px;
+    display: inline-block;
+    background-color: #e23e57;
+    color: whitesmoke;
+}
+
+option.dropdownOption{
+    background-color: #2b2e4a;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    font-size: 15px;
+    margin-left : 1%;
+    padding: 6px;
+    border-radius: 3%;
+}
+
+.ui.primary.button{
+    background-color: #e23e57;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    font-size: 15px;
+    margin-left : 1%;
+    padding: 11px;
+    border-radius: 3%;
+    width: auto;
+}
+
+.ui.primary.button:hover{
+    background-color: #e23e57;
+    cursor: pointer;
+}
+
+.ui.primary.button.clrbrd{
+    background-color: #2b2e4a;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    font-size: 15px;
+    margin-left : 1%;
+    padding: 11px;
+    border-radius: 3%;
+    width: auto;
+}
+
+.ui.primary.button.clrbrd:hover{
+    background-color: #e23e57;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    font-size: 15px;
+    margin-left : 1%;
+    padding: 11px;
+    border-radius: 3%;
+    width: auto;
+}

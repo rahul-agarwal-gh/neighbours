@@ -1,0 +1,11 @@
+td{
+    box-sizing: border-box ;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #4970f0;
+    height: 30px;
+    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
+}

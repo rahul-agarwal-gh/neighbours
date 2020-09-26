@@ -1,0 +1,9 @@
+.button{
+    padding : 20px;
+    margin : 5px;
+    width: 100px;
+}
+
+div.ui.vertical.animated.button:hover{
+    cursor: auto;
+}

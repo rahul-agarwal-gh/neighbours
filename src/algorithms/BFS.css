@@ -1,0 +1,179 @@
+/* .cell{
+    background-color: aqua;
+} */
+
+/* @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
+  /* The element to apply the animation to */
+  /* .cell {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }  */
+
+  
+.visitedStartNodeBlue {
+  /*border: 1px solid rgb(175, 216, 248);*/
+  /*background-color: rgb(255, 254, 106);*/
+ 
+  border-color: white;
+  animation-name: visitedStartNodeBlueAnimation;
+  animation-duration: 2.0s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+
+@keyframes visitedStartNodeBlueAnimation {
+    0% {
+      transform: scale(.3);
+      background-color: rgba(0, 0, 66, 0.75);
+      border-color: white;
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: rgba(17, 104, 217, 0.75);
+      border-color: white;
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(0, 217, 159, 0.75);
+      border-color: white;
+    }
+  
+    100% {
+      transform: scale(1.0);
+      background-color: rgba(0, 190, 218, 0.75);
+      border-color: white;
+    }
+  }
+
+.visitedStartNodePurple {
+  /*border: 1px solid rgb(175, 216, 248);*/
+  /*background-color: rgb(255, 254, 106);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: visitedStartNodePurpleAnimation;
+  animation-duration: 2.0s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.visitedObjectNode {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: visitedStartNodeBlueAnimation;
+  animation-duration: 2.0s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.visitedTargetNodeBlue {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: visitedStartNodeBlueAnimation;
+  animation-duration: 2.0s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.visitedTargetNodePurple {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: visitedStartNodePurpleAnimation;
+  animation-duration: 2.0s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedStartNodePurpleAnimation {
+  0% {
+    transform: scale(.3);
+    background-color: rgba(41, 4, 24, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(97, 0, 20, 0.75);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgba(216, 5, 141, 0.75)
+  }
+
+  100% {
+    transform: scale(1.0);
+    background-color: rgba(178, 67, 255, 0.75);
+  }
+}
+
+.visitedYellowPath{
+    background-color: yellow;
+    border-color: yellow;
+    animation-name: visitedYellowPathAnimation;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+@keyframes visitedYellowPathAnimation {
+    0% {
+      transform: scale(.3);
+      background-color: yellow;
+      border-color: yellow;
+    }
+  
+    50% {
+        background-color: yellow;
+        border-color: yellow;
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: yellow;
+      border-color: yellow;
+    }
+  
+    100% {
+      transform: scale(1.0);
+      background-color: yellow;
+      border-color: yellow;
+    }
+  }
