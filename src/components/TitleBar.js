@@ -1,19 +1,34 @@
-import React from "react"
+import React, {useState} from "react"
 import "./componentStyles/TitleBar.css"
+import Dropdown from "./Dropdown"
 
-function TitleBar () {
 
+const algos = [
+    {
+        label : "Breadth First Search",
+        value : "BFS"
+    }, 
+    {
+        label : "Depth First Search",
+        value : "DFS"
+    },
+    {
+        label : "Djikstra's Algorithm",
+        value : "DJK"
+    }
+]
+    
+function TitleBar ( {onFindClick, onClearWall, onClearBoard} ) {
+
+    const [algo, setAlgo] = useState(algos[0])
+       
     return (
         <div className="titleBar">
            <div className="ui label projectTitle">Neighbours</div> 
-            <select className="ui dropdown">
-                <option className="dropdownOption" value="" >Select Algorithm</option>
-                <option className="dropdownOption" value="BFS">Breadth First Search</option>
-                <option className="dropdownOption" value="DFS">Depth First Search</option>
-            </select>
-            <button className="ui primary button"> Find Path </button>
-            <button className="ui primary button clrbrd">Clear Board</button>
-            <button className="ui primary button clrbrd">Clear Walls</button>
+           <Dropdown currentAlgo={algo} onCurrentAlgoChange={setAlgo} allalgos={algos}/>
+            <button className="ui primary button" onClick={() => onFindClick(algo.value) }> Find Path </button>
+            {/* <button onClick = {onClearBoard} className="ui primary button clrbrd">Clear Board</button> */}
+            <button onClick={onClearWall} className="ui primary button clrbrd">Clear Walls</button>
            </div>
     )
 }

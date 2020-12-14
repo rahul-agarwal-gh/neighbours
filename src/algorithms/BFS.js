@@ -83,7 +83,7 @@ async function BFS(homeId, destId){
             resolve()
         }, 10) })
 
-        document.getElementById(current).classList.add("visitedStartNodeBlue")//backgroundColor = "blue";
+        document.getElementById(current).classList.add("visitedStartNodeBlue")
 
         if(current === destId)
         {
@@ -175,4 +175,5 @@ async function printPath(homeId, destId){
     // document.getElementById(destId).classList.remove("visitedStartNodeBlue")
     // document.getElementById(destId).classList.add("visited")
 }
+export {BFS, getNeighbour, getRowCol, markParent, printPath} 
 export default BFS

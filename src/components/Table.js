@@ -2,28 +2,31 @@ import React from "react"
 import Row from "./Row"
 import "./componentStyles/Table.css"
 
-
 class Table extends React.Component{
 
     state = {
         canEnter : false, 
-        prevHome : '10-17',
-        currentHome : '10-17',
+        prevHome : this.props.currentHome,
+        currentHome : this.props.currentHome,
         movingHome : false,
-        prevDest : '10-33',
-        currentDest : '10-33',
+        prevDest : this.props.currentDest,
+        currentDest : this.props.currentDest,
         movingDest : false
     }
 
     componentDidMount(){
 
-        const home = document.getElementById("10-17"); //setting initial home and destination
-        const dest = document.getElementById('10-33');
+        // const home = document.getElementById(this.state.currentHome); //setting initial home and destination
+        // const dest = document.getElementById(this.state.currentDest);
 
-        home.classList.add("homes")
-        dest.classList.add("dests")
+        // home.classList.add("homes")
+        // dest.classList.add("dests")
+        
     }
+    componentDidUpdate() {    
 
+            console.log("inside cdu", this.state.currentHome, this.state.currentDest)
+    }
     handleMouseDown = (event) => {
 
         const eventTarget = event.target
@@ -47,6 +50,7 @@ class Table extends React.Component{
                 this.setState({prevHome : this.state.currentHome, currentHome : id})
                 document.getElementById(this.state.currentHome).classList.add("homes")
                 document.getElementById(this.state.prevHome).classList.remove("homes")
+                this.props.setHomeInApp(this.state.currentHome)
             }
         }
         else if(this.state.movingDest){  
@@ -54,6 +58,7 @@ class Table extends React.Component{
                 this.setState({prevDest : this.state.currentDest, currentDest : id})
                 document.getElementById(this.state.currentDest).classList.add("dests")
                 document.getElementById(this.state.prevDest).classList.remove("dests")
+                this.props.setDestInApp(this.state.currentDest)
             }
         }
         else{
@@ -89,7 +94,6 @@ class Table extends React.Component{
         }
         return (
             <div>
-            <button onClick={() => this.props.onFindClick(this.state.currentHome, this.state.currentDest)} >Tedede</button>
             <table>
                 <tbody>
                     {table}
